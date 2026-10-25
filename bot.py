@@ -755,4 +755,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # Pyrogram Client import time par jo loop mila usi se bind ho jata hai,
+    # isliye asyncio.run() (naya loop) use nahi karna - wahi loop chalana hai.
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
