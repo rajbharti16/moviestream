@@ -1,0 +1,21 @@
+{
+  "name": "MovieVC Bot",
+  "description": "Telegram group video chat movie streaming bot",
+  "stack": "heroku-24",
+  "buildpacks": [
+    { "url": "heroku/python" },
+    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git" }
+  ],
+  "formation": { "worker": { "quantity": 1 } },
+  "env": {
+    "API_ID": { "description": "my.telegram.org se" },
+    "API_HASH": { "description": "my.telegram.org se" },
+    "BOT_TOKEN": { "description": "BotFather token" },
+    "SESSION_STRING": { "description": "Assistant account ka Pyrogram session string" },
+    "OWNER_ID": { "description": "Tumhari Telegram user id" },
+    "SUPPORT_CHAT": { "description": "Support link (optional)", "required": false },
+    "MODE": { "value": "stream" },
+    "VIDEO_QUALITY": { "value": "SD_480p" },
+    "MAX_DURATION": { "value": "14400" }
+  }
+}

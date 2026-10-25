@@ -1,0 +1,7 @@
+# Same Pyrogram fork use karo jo pinterest bot me colored buttons ke liye use kiya (Bot API 9.4: style + icon_custom_emoji_id support chahiye)
+pyrotgfork
+tgcrypto
+py-tgcalls>=2.2.0
+yt-dlp
+aiohttp
+python-dotenv
